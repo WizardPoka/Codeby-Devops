@@ -1,0 +1,60 @@
+Script started on 2026-09-10 10:49:16+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="190" LINES="46"]
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ [7msudo systemctl daemon-reload[27msudo systemctl daemon-reload
+[?2004l[sudo: authenticate] Password: ******      
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ [7msudo systemctl enable my-nginx[27msudo systemctl enable my-nginx
+[?2004lCreated symlink '/etc/systemd/system/multi-user.target.wants/my-nginx.service' → '/etc/systemd/system/my-nginx.service'.
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ [7msudo systemctl start my-nginx[27msudo systemctl start my-nginx
+[?2004l[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ [7msudo systemctl status my-nginx[27msudo systemctl status my-nginx
+[?2004l[?1h=[0;1;32m●[0m my-nginx.service - My Custom Nginx Server[m
+     Loaded: loaded (]8;;file://codeby-devops-wizard/etc/systemd/system/my-nginx.service\/etc/systemd/system/my-nginx.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m]8;;\
+     Active: [0;1;32mactive (running)[0m since Thu 2026-09-10 10:49:39 MSK; 5s ago[m
+ Invocation: 8ac62d2909014e8d8b31bf3cb2e9e84d[m
+    Process: 2634 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+    Process: 2635 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+   Main PID: 2637 (nginx)[m
+      Tasks: 11[0;38:5:245m (limit: 7262)[0m[m
+     Memory: 10.5M (peak: 10.5M)[m
+        CPU: 80ms[m
+     CGroup: /system.slice/my-nginx.service[m
+             ├─[0;38:5:245m2637 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m[m
+             ├─[0;38:5:245m2638 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m2639 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m2640 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m2641 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m2642 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m2643 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m2644 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m2645 "nginx: worker process"[0m[m
+             ├─[0;38:5:245m2646 "nginx: worker process"[0m[m
+             └─[0;38:5:245m2647 "nginx: worker process"[0m[m
+[m
+сен 10 10:49:39 codeby-devops-wizard systemd[1]: Starting my-nginx.service - My Custom Nginx Server...[m
+сен 10 10:49:39 codeby-devops-wizard systemd[1]: Started my-nginx.service - My Custom Nginx Server.[m
+[K[?1l>[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ [7mcurl localhost[27mcurl localhost
+[?2004l<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-09-10 10:50:04+03:00 [COMMAND_EXIT_CODE="0"]

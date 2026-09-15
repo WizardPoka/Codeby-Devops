@@ -1,0 +1,36 @@
+Script started on 2026-08-17 11:55:34+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="183" LINES="50"]
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ [7msudo update-alternatives --config java[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo update-alternatives --config java
+[?2004l[sudo: authenticate] Password: ******      
+Есть 2 варианта для альтернативы java (предоставляет /usr/bin/java).
+
+  Выбор   Путь                                     Приор Состояние
+------------------------------------------------------------
+* 0            /usr/lib/jvm/jdk-17.0.2/bin/java              2         автоматический режим
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1         ручной режим
+  2            /usr/lib/jvm/jdk-17.0.2/bin/java              2         ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 1
+update-alternatives: используется /usr/lib/jvm/java-11-openjdk-amd64/bin/java для предоставления /usr/bin/java (java) в ручном режиме
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ java versi[K[K[K[K[K-version
+[?2004lopenjdk version "11.0.31" 2026-04-21
+OpenJDK Runtime Environment (build 11.0.31+11-post-1ubuntu1-26.04.2-Ubuntu)
+OpenJDK 64-Bit Server VM (build 11.0.31+11-post-1ubuntu1-26.04.2-Ubuntu, mixed mode, sharing)
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ java -versionsudo update-alternatives --config java
+[?2004lЕсть 2 варианта для альтернативы java (предоставляет /usr/bin/java).
+
+  Выбор   Путь                                     Приор Состояние
+------------------------------------------------------------
+  0            /usr/lib/jvm/jdk-17.0.2/bin/java              2         автоматический режим
+* 1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1         ручной режим
+  2            /usr/lib/jvm/jdk-17.0.2/bin/java              2         ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 2
+update-alternatives: используется /usr/lib/jvm/jdk-17.0.2/bin/java для предоставления /usr/bin/java (java) в ручном режиме
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ sudo update-alternatives --config java[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pjava -version
+[?2004lopenjdk version "17.0.2" 2022-01-18
+OpenJDK Runtime Environment (build 17.0.2+8-86)
+OpenJDK 64-Bit Server VM (build 17.0.2+8-86, mixed mode, sharing)
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-17 11:56:20+03:00 [COMMAND_EXIT_CODE="0"]
