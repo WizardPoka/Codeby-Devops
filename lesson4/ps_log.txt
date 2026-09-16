@@ -1,0 +1,491 @@
+Script started on 2026-08-17 11:43:08+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="183" LINES="50"]
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ ps aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  25644 16932 ?        Ss   авг12   0:30 /usr/lib/systemd/systemd --system --deserialize=74
+root           2  0.0  0.0      0     0 ?        S    авг12   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    авг12   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/0:0H-kblockd]
+root          12  0.0  0.0      0     0 ?        I    авг12   0:00 [kworker/u40:0-ipv6_addrconf]
+root          13  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        S    авг12   0:00 [ksoftirqd/0]
+root          15  0.0  0.0      0     0 ?        I    авг12   0:19 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    авг12   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          17  0.0  0.0      0     0 ?        S    авг12   0:00 [rcu_exp_gp_kthread_worker]
+root          18  0.0  0.0      0     0 ?        S    авг12   0:05 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    авг12   0:00 [kprobe-optimizer]
+root          20  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/0]
+root          21  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/0]
+root          22  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/1]
+root          23  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/1]
+root          24  0.0  0.0      0     0 ?        S    авг12   0:05 [migration/1]
+root          25  0.0  0.0      0     0 ?        S    авг12   0:00 [ksoftirqd/1]
+root          27  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/1:0H-kblockd]
+root          28  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/2]
+root          29  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/2]
+root          30  0.0  0.0      0     0 ?        S    авг12   0:05 [migration/2]
+root          31  0.0  0.0      0     0 ?        S    авг12   0:00 [ksoftirqd/2]
+root          33  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/2:0H-kblockd]
+root          34  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/3]
+root          35  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/3]
+root          36  0.0  0.0      0     0 ?        S    авг12   0:05 [migration/3]
+root          37  0.0  0.0      0     0 ?        S    авг12   0:00 [ksoftirqd/3]
+root          39  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/3:0H-kblockd]
+root          40  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/4]
+root          41  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/4]
+root          42  0.0  0.0      0     0 ?        S    авг12   0:06 [migration/4]
+root          43  0.0  0.0      0     0 ?        S    авг12   0:00 [ksoftirqd/4]
+root          45  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/4:0H-kblockd]
+root          46  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/5]
+root          47  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/5]
+root          48  0.0  0.0      0     0 ?        S    авг12   0:05 [migration/5]
+root          49  0.0  0.0      0     0 ?        S    авг12   0:00 [ksoftirqd/5]
+root          51  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/5:0H-kblockd]
+root          52  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/6]
+root          53  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/6]
+root          54  0.0  0.0      0     0 ?        S    авг12   0:05 [migration/6]
+root          55  0.0  0.0      0     0 ?        S    авг12   0:00 [ksoftirqd/6]
+root          57  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/6:0H-kblockd]
+root          58  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/7]
+root          59  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/7]
+root          60  0.0  0.0      0     0 ?        S    авг12   0:05 [migration/7]
+root          61  0.0  0.0      0     0 ?        S    авг12   0:00 [ksoftirqd/7]
+root          63  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/7:0H-kblockd]
+root          64  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/8]
+root          65  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/8]
+root          66  0.0  0.0      0     0 ?        S    авг12   0:05 [migration/8]
+root          67  0.0  0.0      0     0 ?        S    авг12   0:00 [ksoftirqd/8]
+root          69  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/8:0H-kblockd]
+root          70  0.0  0.0      0     0 ?        S    авг12   0:00 [cpuhp/9]
+root          71  0.0  0.0      0     0 ?        S    авг12   0:00 [idle_inject/9]
+root          72  0.0  0.0      0     0 ?        S    авг12   0:03 [migration/9]
+root          73  0.0  0.0      0     0 ?        S    авг12   0:01 [ksoftirqd/9]
+root          75  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/9:0H-events_highpri]
+root          86  0.0  0.0      0     0 ?        S    авг12   0:00 [kdevtmpfs]
+root          87  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-inet_frag_wq]
+root          88  0.0  0.0      0     0 ?        I    авг12   0:00 [rcu_tasks_kthread]
+root          89  0.0  0.0      0     0 ?        I    авг12   0:00 [rcu_tasks_rude_kthread]
+root          90  0.0  0.0      0     0 ?        S    авг12   0:00 [kauditd]
+root          91  0.0  0.0      0     0 ?        S    авг12   0:00 [khungtaskd]
+root          92  0.0  0.0      0     0 ?        S    авг12   0:00 [oom_reaper]
+root          95  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-writeback]
+root          96  0.0  0.0      0     0 ?        S    авг12   0:46 [kcompactd0]
+root          97  0.0  0.0      0     0 ?        SN   авг12   0:00 [ksmd]
+root          99  0.0  0.0      0     0 ?        SN   авг12   0:00 [khugepaged]
+root         100  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-kblockd]
+root         101  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-blkcg_punt_bio]
+root         102  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-kintegrityd]
+root         103  0.0  0.0      0     0 ?        S    авг12   0:00 [irq/9-acpi]
+root         104  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-tpm_dev_wq]
+root         105  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-ata_sff]
+root         106  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-md_bitmap]
+root         107  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-md_llbitmap_io]
+root         108  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-md_llbitmap_unplug]
+root         109  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-md]
+root         110  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-edac-poller]
+root         111  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-devfreq_wq]
+root         112  0.0  0.0      0     0 ?        S    авг12   0:00 [watchdogd]
+root         113  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-quota_events_unbound]
+root         115  0.0  0.0      0     0 ?        S    авг12   0:00 [kswapd0]
+root         116  0.0  0.0      0     0 ?        S    авг12   0:00 [ecryptfs-kthread]
+root         117  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-kthrotld]
+root         118  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-acpi_thermal_pm]
+root         123  0.0  0.0      0     0 ?        S    авг12   0:00 [scsi_eh_0]
+root         124  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-scsi_tmf_0]
+root         125  0.0  0.0      0     0 ?        S    авг12   0:00 [scsi_eh_1]
+root         126  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-scsi_tmf_1]
+root         130  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-mld]
+root         131  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-ipv6_addrconf]
+root         132  0.0  0.0      0     0 ?        I    авг12   0:00 [kworker/u40:1-ipv6_addrconf]
+root         133  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-kstrp]
+root         141  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u51:0]
+root         142  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u52:0]
+root         143  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u53:0]
+root         144  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u54:0]
+root         145  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u55:0]
+root         146  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u56:0]
+root         147  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u57:0]
+root         148  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u58:0]
+root         149  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u59:0]
+root         150  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u60:0]
+root         151  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/u61:0]
+root         158  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/3:1H]
+root         159  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/6:1H-kblockd]
+root         166  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-charger_manager]
+root         272  0.0  0.0      0     0 ?        I    авг12   0:00 [kworker/u48:3-flush-252:0]
+root         438  0.0  0.0      0     0 ?        I    авг12   0:00 [kworker/u43:1-events_power_efficient]
+root         502  0.0  0.0      0     0 ?        S    авг12   0:00 [scsi_eh_2]
+root         503  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-scsi_tmf_2]
+root         507  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/1:1H-kblockd]
+root         508  0.0  0.0      0     0 ?        I    авг12   0:00 [kworker/u49:1-events_power_efficient]
+root         509  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/5:1H-kblockd]
+root         557  0.0  0.0      0     0 ?        I    авг12   0:00 [kworker/u49:2]
+root         586  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-kdmflush/252:0]
+root         621  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/8:1H-kblockd]
+root         623  0.0  0.0      0     0 ?        I<   авг12   0:05 [kworker/9:1H-kblockd]
+root         624  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/2:1H-kblockd]
+root         630  0.0  0.0      0     0 ?        S    авг12   0:02 [jbd2/dm-0-8]
+root         631  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-ext4-rsv-conversion]
+root         636  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/0:1H-kblockd]
+root         938  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/7:1H-kblockd]
+root         944  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-kmpathd]
+root         945  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-kmpath_handlerd]
+root        1067  0.0  0.0      0     0 ?        S    авг12   0:00 [irq/18-vmwgfx]
+root        1068  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-ttm]
+root        1263  0.0  0.0      0     0 ?        S    авг12   0:00 [jbd2/sda2-8]
+root        1264  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-ext4-rsv-conversion]
+root        1290  0.0  0.0      0     0 ?        I    авг12   0:00 [kworker/u43:3-events_unbound]
+root        1479  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/R-cfg80211]
+message+    1495  0.0  0.0   9444  6200 ?        Ss   авг12   0:07 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        1506  0.0  0.3  46728 30152 ?        Ss   авг12   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1514  0.0  0.1  18516  9768 ?        Ss   авг12   0:02 /usr/lib/systemd/systemd-logind
+root        1521  0.0  0.0      0     0 ?        I<   авг12   0:00 [kworker/4:1H-kblockd]
+root        1591  0.0  0.3 126096 33056 ?        Ssl  авг12   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1600  0.0  0.0   8764  5612 ?        Ss   авг12   0:00 login -- wizard
+wizard      2697  0.0  0.1  22272 13224 ?        Ss   авг12   0:01 /usr/lib/systemd/systemd --user --deserialize=10
+wizard      2705  0.0  0.0  23004  4096 ?        S    авг12   0:00 (sd-pam)
+wizard      2726  0.0  0.0   8856  5808 tty1     Ss+  авг12   0:00 -bash
+root        3079  0.0  0.1  18528 12324 ?        Ss   авг12   0:00 sshd-session: wizard [priv]
+wizard      3138  0.0  0.0  18688  7760 ?        S    авг12   0:03 sshd-session: wizard@pts/0
+wizard      3139  0.0  0.0   8960  6148 pts/0    Ss   авг12   0:00 -bash
+root        3353  0.0  0.0  12448  6888 pts/0    S+   авг12   0:00 sudo -i
+root        3355  0.0  0.0  12448  2240 pts/1    Ss   авг12   0:00 sudo -i
+root        3356  0.0  0.0   8968  6124 pts/1    S+   авг12   0:00 -bash
+root        3684  0.0  0.0      0     0 ?        I    авг12   0:01 [kworker/u44:1-events_unbound]
+root        4384  0.0  0.0      0     0 ?        I    авг13   0:02 [kworker/u44:2-events_unbound]
+root        6299  0.0  0.0   2888  1948 ?        Ss   авг13   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+_chrony     6345  0.0  0.0  20424  6396 ?        S    авг13   0:01 /usr/sbin/chronyd -n -F 1
+_chrony     6348  0.0  0.0  12096  2416 ?        S    авг13   0:00 /usr/sbin/chronyd -n -F 1
+root       16516  0.0  0.0      0     0 ?        I    авг13   0:00 [kworker/u49:3-events_unbound]
+root       22563  0.0  0.1 279752  9904 ?        SLsl авг13   1:15 /usr/sbin/multipathd -d -s
+polkitd    22564  0.0  0.1 306444  8656 ?        Ssl  авг13   0:18 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+root       22603  0.0  0.1 391608 14008 ?        Ssl  авг13   0:00 /usr/sbin/ModemManager
+root       23103  0.0  0.5 517320 48320 ?        Ssl  авг13   0:20 /usr/libexec/fwupd/fwupd
+systemd+   23114  0.0  0.1  22620 14892 ?        Ss   авг13   0:01 /usr/lib/systemd/systemd-resolved
+root       23115  0.0  0.1 543368 15412 ?        Ssl  авг13   0:14 /usr/libexec/udisks2/udisksd
+root       23131  0.0  0.1  37852 12112 ?        Ss   авг13   0:02 /usr/lib/systemd/systemd-udevd
+root       23132  0.0  0.2  50616 19092 ?        S<s  авг13   0:04 /usr/lib/systemd/systemd-journald
+root       23141  0.0  0.1 318660 11968 ?        Ssl  авг13   1:21 /usr/libexec/upowerd
+root       23149  0.0  0.0      0     0 ?        S    авг13   0:00 [psimon]
+systemd+   23151  0.0  0.1  21448 12252 ?        Ss   авг13   0:01 /usr/lib/systemd/systemd-networkd
+wizard     23368  0.0  0.0   8548  5268 ?        Ss   авг13   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+syslog     25199  0.0  0.0 220548  5552 ?        Ssl  авг13   0:00 /usr/sbin/rsyslogd -n -iNONE
+root       30962  0.0  0.0      0     0 ?        S    авг13   0:00 [psimon]
+root       31038  0.0  0.0   7060  3760 ?        Ss   авг13   0:01 /usr/sbin/cron -f -P
+root       32653  0.0  0.0      0     0 ?        I    авг13   0:00 [kworker/u48:0-events_unbound]
+root       32867  0.0  0.0      0     0 ?        I    авг14   0:00 [kworker/u43:0-events_power_efficient]
+root       34135  0.0  0.0      0     0 ?        I    авг14   0:00 [kworker/u46:2-events_unbound]
+root       34756  0.0  0.0      0     0 ?        I    авг14   0:00 [kworker/2:1-mm_percpu_wq]
+root       35051  0.0  0.0      0     0 ?        I    авг15   0:00 [kworker/u48:2-events_unbound]
+root       35403  0.0  0.0      0     0 ?        I    авг15   0:04 [kworker/0:0-events]
+root       35660  0.0  0.0      0     0 ?        I    авг15   0:00 [kworker/u45:0-events_unbound]
+root       37109  0.0  0.0      0     0 ?        I    авг15   0:00 [kworker/u42:1-events_unbound]
+root       41290  0.0  0.0      0     0 ?        I    авг15   0:00 [kworker/u44:0]
+root       43732  0.0  0.0      0     0 ?        I    авг15   0:00 [kworker/7:2-mm_percpu_wq]
+root       43888  0.0  0.0      0     0 ?        I    авг15   0:00 [kworker/u46:0-events_unbound]
+root       44291  0.0  0.0      0     0 ?        I    авг15   0:00 [kworker/u45:2-events_power_efficient]
+root       44401  0.0  0.0      0     0 ?        I    авг16   0:00 [kworker/8:0-mm_percpu_wq]
+root       45387  0.0  0.0      0     0 ?        I    авг16   0:00 [kworker/5:2-mm_percpu_wq]
+root       45506  0.0  0.0      0     0 ?        I    авг16   0:00 [kworker/6:1-events]
+root       45814  0.0  0.0      0     0 ?        I    авг16   0:00 [kworker/u41:2-ext4-rsv-conversion]
+root       46211  0.0  0.0      0     0 ?        I    авг16   0:00 [kworker/u41:1-events_unbound]
+root       46219  0.0  0.0      0     0 ?        I    авг16   0:00 [kworker/3:0-mm_percpu_wq]
+root       46446  0.0  0.0      0     0 ?        I    00:00   0:00 [kworker/u47:0-events_unbound]
+root       46467  0.0  0.0      0     0 ?        I    00:07   0:00 [kworker/u47:2-events_unbound]
+root       46546  0.0  0.0      0     0 ?        I    01:03   0:00 [kworker/u41:0-events_unbound]
+root       46734  0.0  0.0      0     0 ?        I    04:10   0:00 [kworker/6:2-cgroup_free]
+root       46772  0.0  0.0      0     0 ?        I    04:50   0:00 [kworker/u42:0-events_unbound]
+root       46787  0.0  0.0      0     0 ?        I    05:00   0:00 [kworker/1:1-mm_percpu_wq]
+root       47111  0.0  0.0      0     0 ?        I    06:09   0:00 [kworker/u45:1-events_power_efficient]
+root       47117  0.0  0.0      0     0 ?        I    06:10   0:00 [kworker/u46:1-events_unbound]
+root       47118  0.0  0.0      0     0 ?        I    06:10   0:00 [kworker/5:0]
+root       47278  0.0  0.0      0     0 ?        I    06:40   0:00 [kworker/4:1-cgroup_free]
+root       47324  0.0  0.0      0     0 ?        I    07:20   0:00 [kworker/3:3-cgroup_free]
+root       47394  0.0  0.0      0     0 ?        I    08:30   0:00 [kworker/4:2-mm_percpu_wq]
+root       47433  0.1  0.0      0     0 ?        I    09:10   0:17 [kworker/9:0-events]
+root       47445  0.0  0.0      0     0 ?        I    09:20   0:02 [kworker/u50:3-ext4-rsv-conversion]
+root       47459  0.0  0.0      0     0 ?        I    09:40   0:00 [kworker/8:2-cgroup_free]
+root       47470  0.0  0.0      0     0 ?        I    09:41   0:00 [kworker/7:0]
+root       47569  0.0  0.0      0     0 ?        I    11:00   0:00 [kworker/1:3-cgroup_free]
+root       47577  0.0  0.0      0     0 ?        I    11:10   0:00 [kworker/u50:1-flush-252:0]
+root       47594  0.0  0.0      0     0 ?        I    11:16   0:00 [kworker/2:0]
+root       47604  0.0  0.0      0     0 ?        I    11:20   0:00 [kworker/0:1-cgroup_free]
+root       47621  0.0  0.0      0     0 ?        I    11:30   0:00 [kworker/9:2-rcu_gp]
+root       47625  0.0  0.0  10744  7756 ?        Ss   11:30   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       47665  0.0  0.0      0     0 ?        I    11:30   0:00 [kworker/u50:0-writeback]
+root       47889  0.0  0.0      0     0 ?        I    11:40   0:00 [kworker/9:1-events]
+root       47893  0.0  0.0      0     0 ?        I    11:40   0:00 [kworker/u47:1-events_power_efficient]
+root       47894  0.0  0.0      0     0 ?        I    11:40   0:00 [kworker/u42:2-events_unbound]
+root       47907  0.0  0.1  18524 12520 ?        Ss   11:41   0:00 sshd-session: wizard [priv]
+wizard     47965  0.8  0.0  18684  7828 ?        S    11:41   0:00 sshd-session: wizard@pts/2
+wizard     47966  0.2  0.0   8940  6808 pts/2    Ss   11:41   0:00 -bash
+root       48028  0.0  0.0      0     0 ?        I    11:42   0:00 [kworker/u50:2-events_power_efficient]
+wizard     48102  0.0  0.0   5800  2768 pts/2    S+   11:43   0:00 script ps_log.txt
+wizard     48103  0.2  0.0   8796  6068 pts/3    Ss   11:43   0:00 bash -i
+wizard     48110  100  0.0   9764  5180 pts/3    R+   11:43   0:00 ps aux
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ ps aux | grep $USER
+[?2004lroot        1600  0.0  0.0   8764  5612 ?        Ss   авг12   0:00 login -- [01;31m[Kwizard[m[K
+[01;31m[Kwizard[m[K      2697  0.0  0.1  22272 13224 ?        Ss   авг12   0:01 /usr/lib/systemd/systemd --user --deserialize=10
+[01;31m[Kwizard[m[K      2705  0.0  0.0  23004  4096 ?        S    авг12   0:00 (sd-pam)
+[01;31m[Kwizard[m[K      2726  0.0  0.0   8856  5808 tty1     Ss+  авг12   0:00 -bash
+root        3079  0.0  0.1  18528 12324 ?        Ss   авг12   0:00 sshd-session: [01;31m[Kwizard[m[K [priv]
+[01;31m[Kwizard[m[K      3138  0.0  0.0  18688  7760 ?        S    авг12   0:03 sshd-session: [01;31m[Kwizard[m[K@pts/0
+[01;31m[Kwizard[m[K      3139  0.0  0.0   8960  6148 pts/0    Ss   авг12   0:00 -bash
+[01;31m[Kwizard[m[K     23368  0.0  0.0   8548  5268 ?        Ss   авг13   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       47907  0.0  0.1  18524 12520 ?        Ss   11:41   0:00 sshd-session: [01;31m[Kwizard[m[K [priv]
+[01;31m[Kwizard[m[K     47965  0.8  0.0  18684  7828 ?        S    11:41   0:00 sshd-session: [01;31m[Kwizard[m[K@pts/2
+[01;31m[Kwizard[m[K     47966  0.1  0.0   8940  6808 pts/2    Ss   11:41   0:00 -bash
+[01;31m[Kwizard[m[K     48102  0.0  0.0   5800  2768 pts/2    S+   11:43   0:00 script ps_log.txt
+[01;31m[Kwizard[m[K     48103  0.0  0.0   8796  6068 pts/3    Ss   11:43   0:00 bash -i
+[01;31m[Kwizard[m[K     48111  100  0.0   9764  5144 pts/3    R+   11:43   0:00 ps aux
+[01;31m[Kwizard[m[K     48112  0.0  0.0   6716  2980 pts/3    S+   11:43   0:00 grep --color=auto [01;31m[Kwizard[m[K
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ [7mtop -b -n 1 &[27mtop -b -n 1 &
+[?2004l[1] 48113
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ top - 11:43:36 up 4 days, 20:50,  3 users,  load average: 0,12, 0,16, 0,07
+Tasks: 226 total,   1 running, 225 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0,9 us,  0,9 sy,  0,0 ni, 98,2 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st 
+MiB Mem :   8387,1 total,   6379,4 free,    603,7 used,   1712,1 buff/cache     
+MiB Swap:      0,0 total,      0,0 free,      0,0 used.   7783,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  48113 wizard    20   0   10776   6236   4180 R  18,2   0,1   0:00.02 top
+      1 root      20   0   25644  16932  11676 S   0,0   0,2   0:30.37 systemd
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.31 kthreadd
+      3 root      20   0       0      0      0 S   0,0   0,0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-rcu_gp
+      5 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-sync_wq
+      6 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-kvfree_rcu_reclaim
+      7 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-slub_flushwq
+      8 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-netns
+     10 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/0:0H-kblockd
+     12 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/u40:0-ipv6_addrconf
+     13 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-mm_percpu_wq
+     14 root      20   0       0      0      0 S   0,0   0,0   0:00.04 ksoftirqd/0
+     15 root      20   0       0      0      0 I   0,0   0,0   0:19.58 rcu_preempt
+     16 root      20   0       0      0      0 S   0,0   0,0   0:00.00 rcu_exp_par_gp_kthread_worker/0
+     17 root      20   0       0      0      0 S   0,0   0,0   0:00.09 rcu_exp_gp_kthread_worker
+     18 root      rt   0       0      0      0 S   0,0   0,0   0:05.50 migration/0
+     19 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kprobe-optimizer
+     20 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/0
+     21 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/0
+     22 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/1
+     23 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/1
+     24 root      rt   0       0      0      0 S   0,0   0,0   0:05.40 migration/1
+     25 root      20   0       0      0      0 S   0,0   0,0   0:00.05 ksoftirqd/1
+     27 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/1:0H-kblockd
+     28 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/2
+     29 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/2
+     30 root      rt   0       0      0      0 S   0,0   0,0   0:05.82 migration/2
+     31 root      20   0       0      0      0 S   0,0   0,0   0:00.04 ksoftirqd/2
+     33 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/2:0H-kblockd
+     34 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/3
+     35 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/3
+     36 root      rt   0       0      0      0 S   0,0   0,0   0:05.72 migration/3
+     37 root      20   0       0      0      0 S   0,0   0,0   0:00.03 ksoftirqd/3
+     39 root       0 -20       0      0      0 I   0,0   0,0   0:00.31 kworker/3:0H-kblockd
+     40 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/4
+     41 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/4
+     42 root      rt   0       0      0      0 S   0,0   0,0   0:06.18 migration/4
+     43 root      20   0       0      0      0 S   0,0   0,0   0:00.04 ksoftirqd/4
+     45 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/4:0H-kblockd
+     46 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/5
+     47 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/5
+     48 root      rt   0       0      0      0 S   0,0   0,0   0:05.59 migration/5
+     49 root      20   0       0      0      0 S   0,0   0,0   0:00.03 ksoftirqd/5
+     51 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/5:0H-kblockd
+     52 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/6
+     53 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/6
+     54 root      rt   0       0      0      0 S   0,0   0,0   0:05.89 migration/6
+     55 root      20   0       0      0      0 S   0,0   0,0   0:00.02 ksoftirqd/6
+     57 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/6:0H-kblockd
+     58 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/7
+     59 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/7
+     60 root      rt   0       0      0      0 S   0,0   0,0   0:05.91 migration/7
+     61 root      20   0       0      0      0 S   0,0   0,0   0:00.17 ksoftirqd/7
+     63 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/7:0H-kblockd
+     64 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/8
+     65 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/8
+     66 root      rt   0       0      0      0 S   0,0   0,0   0:05.91 migration/8
+     67 root      20   0       0      0      0 S   0,0   0,0   0:00.01 ksoftirqd/8
+     69 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/8:0H-kblockd
+     70 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/9
+     71 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/9
+     72 root      rt   0       0      0      0 S   0,0   0,0   0:03.03 migration/9
+     73 root      20   0       0      0      0 S   0,0   0,0   0:01.49 ksoftirqd/9
+     75 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/9:0H-events_highpri
+     86 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kdevtmpfs
+     87 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-inet_frag_wq
+     88 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_kthread
+     89 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_rude_kthread
+     90 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kauditd
+     91 root      20   0       0      0      0 S   0,0   0,0   0:00.50 khungtaskd
+     92 root      20   0       0      0      0 S   0,0   0,0   0:00.00 oom_reaper
+     95 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-writeback
+     96 root      20   0       0      0      0 S   0,0   0,0   0:46.32 kcompactd0
+     97 root      25   5       0      0      0 S   0,0   0,0   0:00.00 ksmd
+     99 root      39  19       0      0      0 S   0,0   0,0   0:00.00 khugepaged
+    100 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-kblockd
+    101 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-blkcg_punt_bio
+    102 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-kintegrityd
+    103 root     -51   0       0      0      0 S   0,0   0,0   0:00.02 irq/9-acpi
+    104 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-tpm_dev_wq
+    105 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-ata_sff
+    106 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-md_bitmap
+    107 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-md_llbitmap_io
+    108 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-md_llbitmap_unplug
+    109 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-md
+    110 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-edac-poller
+    111 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-devfreq_wq
+    112 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 watchdogd
+    113 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-quota_events_unbound
+    115 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kswapd0
+    116 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ecryptfs-kthread
+    117 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-kthrotld
+    118 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-acpi_thermal_pm
+    123 root      20   0       0      0      0 S   0,0   0,0   0:00.01 scsi_eh_0
+    124 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-scsi_tmf_0
+    125 root      20   0       0      0      0 S   0,0   0,0   0:00.03 scsi_eh_1
+    126 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-scsi_tmf_1
+    130 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-mld
+    131 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-ipv6_addrconf
+    132 root      20   0       0      0      0 I   0,0   0,0   0:00.26 kworker/u40:1-ipv6_addrconf
+    133 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-kstrp
+    141 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u51:0
+    142 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u52:0
+    143 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u53:0
+    144 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u54:0
+    145 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u55:0
+    146 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u56:0
+    147 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u57:0
+    148 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u58:0
+    149 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u59:0
+    150 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u60:0
+    151 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u61:0
+    158 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/3:1H
+    159 root       0 -20       0      0      0 I   0,0   0,0   0:00.27 kworker/6:1H-kblockd
+    166 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-charger_manager
+    272 root      20   0       0      0      0 I   0,0   0,0   0:00.29 kworker/u48:3-flush-252:0
+    438 root      20   0       0      0      0 I   0,0   0,0   0:00.66 kworker/u43:1-events_power_efficient
+    502 root      20   0       0      0      0 S   0,0   0,0   0:00.00 scsi_eh_2
+    503 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-scsi_tmf_2
+    507 root       0 -20       0      0      0 I   0,0   0,0   0:00.72 kworker/1:1H-kblockd
+    508 root      20   0       0      0      0 I   0,0   0,0   0:00.70 kworker/u49:1-events_unbound
+    509 root       0 -20       0      0      0 I   0,0   0,0   0:00.37 kworker/5:1H-kblockd
+    557 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/u49:2
+    586 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-kdmflush/252:0
+    621 root       0 -20       0      0      0 I   0,0   0,0   0:00.20 kworker/8:1H-kblockd
+    623 root       0 -20       0      0      0 I   0,0   0,0   0:05.58 kworker/9:1H-kblockd
+    624 root       0 -20       0      0      0 I   0,0   0,0   0:00.80 kworker/2:1H-kblockd
+    630 root      20   0       0      0      0 S   0,0   0,0   0:02.49 jbd2/dm-0-8
+    631 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-ext4-rsv-conversion
+    636 root       0 -20       0      0      0 I   0,0   0,0   0:00.16 kworker/0:1H-kblockd
+    938 root       0 -20       0      0      0 I   0,0   0,0   0:00.23 kworker/7:1H-kblockd
+    944 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-kmpathd
+    945 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-kmpath_handlerd
+   1067 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 irq/18-vmwgfx
+   1068 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-ttm
+   1263 root      20   0       0      0      0 S   0,0   0,0   0:00.01 jbd2/sda2-8
+   1264 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-ext4-rsv-conversion
+   1290 root      20   0       0      0      0 I   0,0   0,0   0:00.77 kworker/u43:3-events_unbound
+   1479 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-cfg80211
+   1495 message+  20   0    9444   6200   4680 S   0,0   0,1   0:07.35 dbus-daemon
+   1506 root      20   0   46728  30152  14980 S   0,0   0,4   0:00.35 networkd-dispat
+   1514 root      20   0   18516   9768   8364 S   0,0   0,1   0:02.70 systemd-logind
+   1521 root       0 -20       0      0      0 I   0,0   0,0   0:00.40 kworker/4:1H-kblockd
+   1591 root      20   0  126096  33056  18444 S   0,0   0,4   0:00.33 unattended-upgr
+   1600 root      20   0    8764   5612   4748 S   0,0   0,1   0:00.04 login
+   2697 wizard    20   0   22272  13224  10832 S   0,0   0,2   0:01.23 systemd
+   2705 wizard    20   0   23004   4096   2088 S   0,0   0,0   0:00.00 (sd-pam)
+   2726 wizard    20   0    8856   5808   4136 S   0,0   0,1   0:00.05 bash
+   3079 root      20   0   18528  12324  10400 S   0,0   0,1   0:00.03 sshd-session
+   3138 wizard    20   0   18688   7760   5556 S   0,0   0,1   0:03.34 sshd-session
+   3139 wizard    20   0    8960   6148   4328 S   0,0   0,1   0:00.38 bash
+   3353 root      20   0   12448   6888   6096 S   0,0   0,1   0:00.07 sudo
+   3355 root      20   0   12448   2240   1452 S   0,0   0,0   0:00.00 sudo
+   3356 root      20   0    8968   6124   4328 S   0,0   0,1   0:00.18 bash
+   3684 root      20   0       0      0      0 I   0,0   0,0   0:01.91 kworker/u44:1-events_unbound
+   4384 root      20   0       0      0      0 I   0,0   0,0   0:02.32 kworker/u44:2-events_unbound
+   6299 root      20   0    2888   1948   1828 S   0,0   0,0   0:00.04 chronyd-starter
+   6345 _chrony   20   0   20424   6396   5616 S   0,0   0,1   0:01.62 chronyd
+   6348 _chrony   20   0   12096   2416   1764 S   0,0   0,0   0:00.00 chronyd
+  16516 root      20   0       0      0      0 I   0,0   0,0   0:00.56 kworker/u49:3-events_unbound
+  22563 root     -11   0  279752   9904   7540 S   0,0   0,1   1:15.60 multipathd
+  22564 polkitd   20   0  306444   8656   7828 S   0,0   0,1   0:18.57 polkitd
+  22603 root      20   0  391608  14008  11760 S   0,0   0,2   0:00.17 ModemManager
+  23103 root      20   0  517320  48320  41188 S   0,0   0,6   0:20.90 fwupd
+  23114 systemd+  20   0   22620  14892  12284 S   0,0   0,2   0:01.25 systemd-resolve
+  23115 root      20   0  543368  15412  12992 S   0,0   0,2   0:14.77 udisksd
+  23131 root      20   0   37852  12112   9280 S   0,0   0,1   0:02.38 systemd-udevd
+  23132 root      19  -1   50616  19092  17768 S   0,0   0,2   0:04.29 systemd-journal
+  23141 root      20   0  318660  11968   9960 S   0,0   0,1   1:21.19 upowerd
+  23149 root      -2   0       0      0      0 S   0,0   0,0   0:00.00 psimon
+  23151 systemd+  20   0   21448  12252  10696 S   0,0   0,1   0:01.21 systemd-network
+  23368 wizard    20   0    8548   5268   4844 S   0,0   0,1   0:00.02 dbus-daemon
+  25199 syslog    20   0  220548   5552   4672 S   0,0   0,1   0:00.50 rsyslogd
+  30962 root      -2   0       0      0      0 S   0,0   0,0   0:00.00 psimon
+  31038 root      20   0    7060   3760   3516 S   0,0   0,0   0:01.26 cron
+  32653 root      20   0       0      0      0 I   0,0   0,0   0:00.29 kworker/u48:0-events_unbound
+  32867 root      20   0       0      0      0 I   0,0   0,0   0:00.05 kworker/u43:0-events_power_efficient
+  34135 root      20   0       0      0      0 I   0,0   0,0   0:00.08 kworker/u46:2-events_unbound
+  34756 root      20   0       0      0      0 I   0,0   0,0   0:00.22 kworker/2:1-mm_percpu_wq
+  35051 root      20   0       0      0      0 I   0,0   0,0   0:00.23 kworker/u48:2-events_unbound
+  35403 root      20   0       0      0      0 I   0,0   0,0   0:04.87 kworker/0:0-events
+  35660 root      20   0       0      0      0 I   0,0   0,0   0:00.11 kworker/u45:0-events_unbound
+  37109 root      20   0       0      0      0 I   0,0   0,0   0:00.46 kworker/u42:1-events_unbound
+  41290 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/u44:0
+  43732 root      20   0       0      0      0 I   0,0   0,0   0:00.07 kworker/7:2-mm_percpu_wq
+  43888 root      20   0       0      0      0 I   0,0   0,0   0:00.15 kworker/u46:0-events_unbound
+  44291 root      20   0       0      0      0 I   0,0   0,0   0:00.32 kworker/u45:2-events_power_efficient
+  44401 root      20   0       0      0      0 I   0,0   0,0   0:00.04 kworker/8:0-mm_percpu_wq
+  45387 root      20   0       0      0      0 I   0,0   0,0   0:00.05 kworker/5:2-mm_percpu_wq
+  45506 root      20   0       0      0      0 I   0,0   0,0   0:00.05 kworker/6:1-mm_percpu_wq
+  45814 root      20   0       0      0      0 I   0,0   0,0   0:00.04 kworker/u41:2-ext4-rsv-conversion
+  46211 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/u41:1-events_unbound
+  46219 root      20   0       0      0      0 I   0,0   0,0   0:00.04 kworker/3:0-mm_percpu_wq
+  46446 root      20   0       0      0      0 I   0,0   0,0   0:00.09 kworker/u47:0-events_unbound
+  46467 root      20   0       0      0      0 I   0,0   0,0   0:00.12 kworker/u47:2-events_unbound
+  46546 root      20   0       0      0      0 I   0,0   0,0   0:00.04 kworker/u41:0-events_unbound
+  46734 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/6:2-cgroup_free
+  46772 root      20   0       0      0      0 I   0,0   0,0   0:00.33 kworker/u42:0-events_unbound
+  46787 root      20   0       0      0      0 I   0,0   0,0   0:00.03 kworker/1:1-mm_percpu_wq
+  47111 root      20   0       0      0      0 I   0,0   0,0   0:00.21 kworker/u45:1-events_power_efficient
+  47117 root      20   0       0      0      0 I   0,0   0,0   0:00.15 kworker/u46:1-events_unbound
+  47118 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/5:0
+  47278 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/4:1-cgroup_free
+  47324 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/3:3-cgroup_free
+  47394 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/4:2-mm_percpu_wq
+  47433 root      20   0       0      0      0 I   0,0   0,0   0:17.48 kworker/9:0-events
+  47445 root      20   0       0      0      0 I   0,0   0,0   0:02.03 kworker/u50:3-ext4-rsv-conversion
+  47459 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/8:2-cgroup_free
+  47470 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/7:0
+  47569 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/1:3-cgroup_free
+  47577 root      20   0       0      0      0 I   0,0   0,0   0:00.16 kworker/u50:1-flush-252:0
+  47594 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/2:0
+  47604 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/0:1-cgroup_free
+  47621 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/9:2-rcu_gp
+  47625 root      20   0   10744   7756   6580 S   0,0   0,1   0:00.02 sshd
+  47665 root      20   0       0      0      0 I   0,0   0,0   0:00.16 kworker/u50:0-writeback
+  47889 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/9:1-events
+  47893 root      20   0       0      0      0 I   0,0   0,0   0:00.04 kworker/u47:1-events_power_efficient
+  47894 root      20   0       0      0      0 I   0,0   0,0   0:00.07 kworker/u42:2-events_unbound
+  47907 root      20   0   18524  12520  10584 S   0,0   0,1   0:00.02 sshd-session
+  47965 wizard    20   0   18684   7828   5624 S   0,0   0,1   0:01.02 sshd-session
+  47966 wizard    20   0    8940   6808   5032 S   0,0   0,1   0:00.21 bash
+  48028 root      20   0       0      0      0 I   0,0   0,0   0:00.03 kworker/u50:2-events_power_efficient
+  48102 wizard    20   0    5800   2768   2640 S   0,0   0,0   0:00.01 script
+  48103 wizard    20   0    8796   6068   4456 S   0,0   0,1   0:00.03 bash
+^C[?2004l[?2004h[?2004l
+[1]+  Done                       top -b -n 1
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ [7mps aux | grep top[27mps aux | grep top
+[?2004lwizard     48115  0.0  0.0   6716  2988 pts/3    S+   11:43   0:00 grep --color=auto [01;31m[Ktop[m[K
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ kill -9 48115
+[?2004lbash: kill: (48115) - No such process
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ kill -9 48115[K[K[K^C[?2004l[?2004h[?2004l
+[?2004h]0;wizard@codeby-devops-wizard: ~[01;32mwizard@codeby-devops-wizard[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-17 11:44:18+03:00 [COMMAND_EXIT_CODE="130"]
