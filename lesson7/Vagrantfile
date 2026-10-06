@@ -1,0 +1,20 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-22.04"
+  config.vm.box_check_update = false
+  config.vm.hostname = "webservers"
+
+  # Пробрасываем порты: гость 8084/8085 → хост 8084/8085
+  config.vm.network "forwarded_port", guest: 8084, host: 8084
+  config.vm.network "forwarded_port", guest: 8085, host: 8085
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "lesson7_webservers"
+    vb.memory = "1024"
+    vb.cpus = 1
+  end
+
+  config.vm.provision "shell", path: "scripts/provision.sh"
+end
