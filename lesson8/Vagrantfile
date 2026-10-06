@@ -1,0 +1,38 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-22.04"
+  config.vm.box_check_update = false
+
+  # ========== SERVER ==========
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+    server.vm.network "private_network", ip: "192.168.56.10"
+    # Пробрасываем 443 и 80 на хост, чтобы можно было посмотреть в браузере
+    server.vm.network "forwarded_port", guest: 80,  host: 8080
+    server.vm.network "forwarded_port", guest: 443, host: 8443
+
+    server.vm.provider "virtualbox" do |vb|
+      vb.name = "lesson8_server"
+      vb.memory = "1024"
+      vb.cpus = 1
+    end
+
+    server.vm.provision "shell", path: "scripts/server.sh"
+  end
+
+  # ========== CLIENT ==========
+  config.vm.define "client" do |client|
+    client.vm.hostname = "client"
+    client.vm.network "private_network", ip: "192.168.56.11"
+
+    client.vm.provider "virtualbox" do |vb|
+      vb.name = "lesson8_client"
+      vb.memory = "1024"
+      vb.cpus = 1
+    end
+
+    client.vm.provision "shell", path: "scripts/client.sh"
+  end
+end
