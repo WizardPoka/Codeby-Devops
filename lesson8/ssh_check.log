@@ -1,0 +1,153 @@
+vagrant@client:~$ cat /etc/hosts | grep mydevops
+192.168.56.10 mydevops.local www.mydevops.local
+vagrant@client:~$ openssl verify /usr/local/share/ca-certificates/lesson8-server.crt
+/usr/local/share/ca-certificates/lesson8-server.crt: OK
+vagrant@client:~$ curl -v https://mydevops.local/
+*   Trying 192.168.56.10:443...
+* Connected to mydevops.local (192.168.56.10) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: /etc/ssl/certs
+* TLSv1.0 (OUT), TLS header, Certificate Status (22):
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+* TLSv1.2 (IN), TLS header, Certificate Status (22):
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* TLSv1.2 (IN), TLS header, Finished (20):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+* TLSv1.2 (OUT), TLS header, Finished (20):
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+* TLSv1.2 (OUT), TLS header, Supplemental data (23):
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=RU; ST=Moscow; L=Moscow; O=DevOps Course; OU=Lesson8; CN=mydevops.local
+*  start date: Oct  6 06:29:47 2026 GMT
+*  expire date: Oct  6 06:29:47 2027 GMT
+*  subjectAltName: host "mydevops.local" matched cert's "mydevops.local"
+*  issuer: C=RU; ST=Moscow; L=Moscow; O=DevOps Course; OU=Lesson8; CN=mydevops.local
+*  SSL certificate verify ok.
+* TLSv1.2 (OUT), TLS header, Supplemental data (23):
+> GET / HTTP/1.1
+> Host: mydevops.local
+> User-Agent: curl/7.81.0
+> Accept: */*
+> 
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* old SSL session ID is stale, removing
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Tue, 06 Oct 2026 06:36:15 GMT
+< Server: Apache/2.4.52 (Ubuntu)
+< Last-Modified: Tue, 06 Oct 2026 06:29:47 GMT
+< ETag: "e9-65d2620000d21"
+< Accept-Ranges: bytes
+< Content-Length: 233
+< Vary: Accept-Encoding
+< Content-Type: text/html
+< 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTPS on mydevops.local</title>
+</head>
+<body>
+    <h1>Secure site: mydevops.local</h1>
+    <p>Served over HTTPS from /var/www/lesson8</p>
+</body>
+</html>
+* Connection #0 to host mydevops.local left intact
+vagrant@client:~$ curl -vI https://www.mydevops.local/
+*   Trying 192.168.56.10:443...
+* Connected to www.mydevops.local (192.168.56.10) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: /etc/ssl/certs
+* TLSv1.0 (OUT), TLS header, Certificate Status (22):
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+* TLSv1.2 (IN), TLS header, Certificate Status (22):
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* TLSv1.2 (IN), TLS header, Finished (20):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+* TLSv1.2 (OUT), TLS header, Finished (20):
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+* TLSv1.2 (OUT), TLS header, Supplemental data (23):
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=RU; ST=Moscow; L=Moscow; O=DevOps Course; OU=Lesson8; CN=mydevops.local
+*  start date: Oct  6 06:29:47 2026 GMT
+*  expire date: Oct  6 06:29:47 2027 GMT
+*  subjectAltName: host "www.mydevops.local" matched cert's "www.mydevops.local"
+*  issuer: C=RU; ST=Moscow; L=Moscow; O=DevOps Course; OU=Lesson8; CN=mydevops.local
+*  SSL certificate verify ok.
+* TLSv1.2 (OUT), TLS header, Supplemental data (23):
+> HEAD / HTTP/1.1
+> Host: www.mydevops.local
+> User-Agent: curl/7.81.0
+> Accept: */*
+> 
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* old SSL session ID is stale, removing
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 301 Moved Permanently
+HTTP/1.1 301 Moved Permanently
+< Date: Tue, 06 Oct 2026 06:36:26 GMT
+Date: Tue, 06 Oct 2026 06:36:26 GMT
+< Server: Apache/2.4.52 (Ubuntu)
+Server: Apache/2.4.52 (Ubuntu)
+< Location: https://mydevops.local/
+Location: https://mydevops.local/
+< Content-Type: text/html; charset=iso-8859-1
+Content-Type: text/html; charset=iso-8859-1
+
+< 
+* Connection #0 to host www.mydevops.local left intact
+vagrant@client:~$ curl -vI http://mydevops.local/
+*   Trying 192.168.56.10:80...
+* Connected to mydevops.local (192.168.56.10) port 80 (#0)
+> HEAD / HTTP/1.1
+> Host: mydevops.local
+> User-Agent: curl/7.81.0
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 301 Moved Permanently
+HTTP/1.1 301 Moved Permanently
+< Date: Tue, 06 Oct 2026 06:36:38 GMT
+Date: Tue, 06 Oct 2026 06:36:38 GMT
+< Server: Apache/2.4.52 (Ubuntu)
+Server: Apache/2.4.52 (Ubuntu)
+< Location: https://mydevops.local/
+Location: https://mydevops.local/
+< Content-Type: text/html; charset=iso-8859-1
+Content-Type: text/html; charset=iso-8859-1
+
+< 
+* Connection #0 to host mydevops.local left intact
