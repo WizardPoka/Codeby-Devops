@@ -1,0 +1,36 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-22.04"
+  config.vm.box_check_update = false
+
+  # ========== STORE ==========
+  config.vm.define "store" do |store|
+    store.vm.hostname = "store"
+    store.vm.network "private_network", ip: "192.168.56.11"
+
+    store.vm.provider "virtualbox" do |vb|
+      vb.name = "lesson9_store"
+      vb.memory = "1024"
+      vb.cpus = 1
+    end
+
+    store.vm.provision "shell", path: "scripts/store.sh"
+  end
+
+  # ========== SERVER ==========
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+    server.vm.network "private_network", ip: "192.168.56.10"
+
+    server.vm.provider "virtualbox" do |vb|
+      vb.name = "lesson9_server"
+      vb.memory = "1024"
+      vb.cpus = 1
+    end
+
+    server.vm.provision "shell", path: "scripts/server.sh"
+  end
+
+end
