@@ -1,0 +1,171 @@
+Script started on 2026-10-06 16:41:01+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="154" LINES="46"]
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ ?[K?[K/[K./script1.sh 
+[?2004l=== script1.sh started ===
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt (perm 777)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt (20 random chars)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file4.txt, /home/wizard/WORK/codeby-devops/lesson10/myfolder/file5.txt (empty)
+=== script1.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:41 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:41 ..
+-rw-rw-r-- 1 wizard wizard   58 окт  6 16:41 file1.txt
+-rwxrwxrwx 1 wizard wizard    0 окт  6 16:41 file2.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:41 file3.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:41 file4.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:41 file5.txt
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ ./script1.sh 
+[?2004l=== script1.sh started ===
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt (perm 777)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt (20 random chars)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file4.txt, /home/wizard/WORK/codeby-devops/lesson10/myfolder/file5.txt (empty)
+=== script1.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:41 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:41 ..
+-rw-rw-r-- 1 wizard wizard   58 окт  6 16:41 file1.txt
+-rwxrwxrwx 1 wizard wizard    0 окт  6 16:41 file2.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:41 file3.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:41 file4.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:41 file5.txt
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ ./script1.sh [1P[1@2
+[?2004l=== script2.sh started ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder: 5
+Changed perms on /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt: 777 -> 664
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file4.txt
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file5.txt
+Removed empty files: 3
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt
+=== script2.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder after processing:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:41 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:41 ..
+-rw-rw-r-- 1 wizard wizard   15 окт  6 16:41 file1.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:41 file3.txt
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ ./script2.sh 
+[?2004l=== script2.sh started ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder: 2
+/home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt not found, skipping chmod
+Removed empty files: 0
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt
+=== script2.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder after processing:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:41 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:41 ..
+-rw-rw-r-- 1 wizard wizard   15 окт  6 16:41 file1.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:41 file3.txt
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ rm -rf myfolder/
+[?2004l[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ rm -rf myfolder/[3P./script2.sh 
+[?2004l=== script2.sh started ===
+Folder /home/wizard/WORK/codeby-devops/lesson10/myfolder does not exist. Nothing to do.
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ ./script2.sh rm -rf myfolder/[3P./script2.sh 1[C[C[C[C
+[?2004l=== script1.sh started ===
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt (perm 777)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt (20 random chars)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file4.txt, /home/wizard/WORK/codeby-devops/lesson10/myfolder/file5.txt (empty)
+=== script1.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:41 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:41 ..
+-rw-rw-r-- 1 wizard wizard   58 окт  6 16:41 file1.txt
+-rwxrwxrwx 1 wizard wizard    0 окт  6 16:41 file2.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:41 file3.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:41 file4.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:41 file5.txt
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ ./script1.sh 2[C[C[C[C
+[?2004l=== script2.sh started ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder: 5
+Changed perms on /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt: 777 -> 664
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file4.txt
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file5.txt
+Removed empty files: 3
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt
+=== script2.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder after processing:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:42 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:41 ..
+-rw-rw-r-- 1 wizard wizard   15 окт  6 16:42 file1.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:42 file3.txt
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ rm -rf myfolder/
+[?2004l[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ [7m./script1.sh && ./script2.sh && ./script1.sh && ./script2.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./script1.sh && ./script2.sh && ./script1.sh && ./script2.sh
+[?2004l=== script1.sh started ===
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt (perm 777)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt (20 random chars)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file4.txt, /home/wizard/WORK/codeby-devops/lesson10/myfolder/file5.txt (empty)
+=== script1.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:42 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:42 ..
+-rw-rw-r-- 1 wizard wizard   58 окт  6 16:42 file1.txt
+-rwxrwxrwx 1 wizard wizard    0 окт  6 16:42 file2.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:42 file3.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:42 file4.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:42 file5.txt
+=== script2.sh started ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder: 5
+Changed perms on /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt: 777 -> 664
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file4.txt
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file5.txt
+Removed empty files: 3
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt
+=== script2.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder after processing:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:42 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:42 ..
+-rw-rw-r-- 1 wizard wizard   15 окт  6 16:42 file1.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:42 file3.txt
+=== script1.sh started ===
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt (perm 777)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt (20 random chars)
+Created/updated: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file4.txt, /home/wizard/WORK/codeby-devops/lesson10/myfolder/file5.txt (empty)
+=== script1.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:42 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:42 ..
+-rw-rw-r-- 1 wizard wizard   58 окт  6 16:42 file1.txt
+-rwxrwxrwx 1 wizard wizard    0 окт  6 16:42 file2.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:42 file3.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:42 file4.txt
+-rw-rw-r-- 1 wizard wizard    0 окт  6 16:42 file5.txt
+=== script2.sh started ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder: 5
+Changed perms on /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt: 777 -> 664
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file2.txt
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file4.txt
+Removing empty file: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file5.txt
+Removed empty files: 3
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file1.txt
+Trimmed to first line: /home/wizard/WORK/codeby-devops/lesson10/myfolder/file3.txt
+=== script2.sh done ===
+Files in /home/wizard/WORK/codeby-devops/lesson10/myfolder after processing:
+итого 16
+drwxrwxr-x 2 wizard wizard 4096 окт  6 16:42 .
+drwxrwxr-x 3 wizard wizard 4096 окт  6 16:42 ..
+-rw-rw-r-- 1 wizard wizard   15 окт  6 16:42 file1.txt
+-rw-rw-r-- 1 wizard wizard   21 окт  6 16:42 file3.txt
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ [7mecho "Exit code: $?" [27mecho "Exit code: $?" 
+[?2004lExit code: 0
+[?2004h]0;wizard@PortableWizard: ~/WORK/codeby-devops/lesson10[01;32mwizard@PortableWizard[00m:[01;34m~/WORK/codeby-devops/lesson10[00m$ exit
+[?2004lexit
+
+Script done on 2026-10-06 16:42:30+03:00 [COMMAND_EXIT_CODE="0"]
