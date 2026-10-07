@@ -65,7 +65,7 @@ create_file1() {
 # Создаёт второй файл: пустой, с правами 777.
 create_file2() {
     local file_path="$1"
-    > "$file_path"
+    : > "$file_path"
     chmod "$FILE2_PERMISSIONS" "$file_path"
     echo "Created/updated: $file_path (perm $FILE2_PERMISSIONS)"
 }
@@ -85,7 +85,7 @@ create_empty_files() {
     local file_path
 
     for file_path in "${file_paths[@]}"; do
-        > "$file_path"
+        : > "$file_path"
     done
     echo "Created/updated: ${file_paths[*]} (empty)"
 }
