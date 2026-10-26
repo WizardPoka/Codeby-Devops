@@ -1,0 +1,10 @@
+# Скопируйте в terraform.tfvars и заполните своими значениями.
+# Файл terraform.tfvars исключён из git.
+
+cloud_id  = "b1gxxxxxxxxxxxxxxxxx"
+folder_id = "b1gxxxxxxxxxxxxxxxxx"
+zone      = "ru-central1-a"
+
+# Эти значения создаёт scripts/setup-yc.sh
+ssh_public_key_path  = "~/.ssh/codeby_lesson14.pub"
+ssh_private_key_path = "~/.ssh/codeby_lesson14"

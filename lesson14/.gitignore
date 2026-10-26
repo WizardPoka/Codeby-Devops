@@ -1,0 +1,17 @@
+# Локальные артефакты Terraform и секреты
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform.tfvars
+*.auto.tfvars
+!*.tfvars.example
+crash.log
+
+# ключи и service account key
+*.key
+*.pem
+codeby-terraform-key.json
+
+# служебные файлы окружения
+.env
