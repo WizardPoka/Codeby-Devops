@@ -30,6 +30,12 @@ lesson12/
 - Ansible (`ansible-core` 2.16+)
 - Стандартный Vagrant insecure key: `~/.vagrant.d/insecure_private_key`
 
+Ansible установлен в `~/.local/bin`. Если этой директории нет в `PATH`:
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+```
+
 Приватный ключ в репозиторий не добавляется: Vagrant создаёт его сам,
 а `config.ssh.insert_key = false` оставляет стандартный ключ Vagrant,
 который есть в любой установке. Это учебный стенд, не production.
@@ -126,9 +132,13 @@ vagrant ssh prod -c "systemctl is-active nginx && dpkg -l wget htop nginx | tail
 
 - [ ] `ansible-version.txt`
 - [ ] `vagrant-status.txt`
+- [ ] `inventory-dev.txt`, `inventory-prod.txt`
+- [ ] `syntax-check.txt`
 - [ ] `ping-dev.txt`, `ping-prod.txt`
 - [ ] `playbook-dev.txt`, `playbook-prod.txt`
-- [ ] `curl-dev.txt`, `curl-prod.txt`
+- [ ] `idempotency-dev.txt`, `idempotency-prod.txt`
+- [ ] `vm-check-dev.txt`, `vm-check-prod.txt`
+- [ ] `curl-both.txt`
 
 ## Статус
 
@@ -138,8 +148,9 @@ vagrant ssh prod -c "systemctl is-active nginx && dpkg -l wget htop nginx | tail
 - [x] playbook: пакеты, nginx, debug окружения
 - [x] SSH-подключение по ключу
 - [x] Логи выполнения
+- [x] Commit / push ветки `lesson12`
 - [ ] Скриншоты
-- [ ] Commit / push / PR
+- [ ] PR `lesson12 -> main`
 
 ## Остановка и удаление
 
