@@ -1,0 +1,41 @@
+---
+- name: Configure dev and prod hosts
+  hosts: all
+  become: true
+  gather_facts: true
+
+  pre_tasks:
+    - name: Ensure environment name is defined
+      ansible.builtin.assert:
+        that:
+          - env_name is defined
+          - env_name in ['dev', 'prod']
+        fail_msg: "env_name must be 'dev' or 'prod'"
+
+  tasks:
+    - name: Install required packages
+      ansible.builtin.apt:
+        name:
+          - wget
+          - htop
+          - nginx
+        state: present
+        update_cache: true
+        cache_valid_time: 3600
+
+    - name: Ensure nginx is started and enabled
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
+
+    - name: Verify that nginx responds on port 80
+      ansible.builtin.uri:
+        url: http://127.0.0.1/
+        status_code: 200
+      register: nginx_check
+      changed_when: false
+
+    - name: Show which environment is being configured
+      ansible.builtin.debug:
+        msg: "This host is in {{ env_name }} environment"

@@ -1,0 +1,9 @@
+ansible [core 2.21.5]
+  config file = /home/wizard/WORK/codeby-devops/lesson12/ansible/ansible.cfg
+  configured module search path = ['/home/wizard/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/wizard/.local/lib/python3.12/site-packages/ansible
+  ansible collection location = /home/wizard/.ansible/collections:/usr/share/ansible/collections
+  executable location = /home/wizard/.local/bin/ansible
+  python version = 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0] (/usr/bin/python3)
+  jinja version = 3.1.2
+  pyyaml version = 6.0.1 (with libyaml v0.2.5)

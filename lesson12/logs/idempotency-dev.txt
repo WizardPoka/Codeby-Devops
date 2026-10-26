@@ -1,0 +1,29 @@
+
+PLAY [Configure dev and prod hosts] ********************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [dev-vm]
+
+TASK [Ensure environment name is defined] **************************************
+ok: [dev-vm] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+
+TASK [Install required packages] ***********************************************
+ok: [dev-vm]
+
+TASK [Ensure nginx is started and enabled] *************************************
+ok: [dev-vm]
+
+TASK [Verify that nginx responds on port 80] ***********************************
+ok: [dev-vm]
+
+TASK [Show which environment is being configured] ******************************
+ok: [dev-vm] => {
+    "msg": "This host is in dev environment"
+}
+
+PLAY RECAP *********************************************************************
+dev-vm                     : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

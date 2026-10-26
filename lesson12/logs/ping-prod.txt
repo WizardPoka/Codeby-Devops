@@ -1,0 +1,4 @@
+prod-vm | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}

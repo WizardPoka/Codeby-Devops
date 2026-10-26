@@ -1,0 +1,4 @@
+dev-vm | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
