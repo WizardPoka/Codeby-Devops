@@ -1,0 +1,53 @@
+# --- локальные артефакты Vagrant / Ansible ---
+.vagrant/
+*.log
+!lesson6/lxd/script.log
+!lesson8/ssh_check.log
+!lesson10/test.log
+*.retry
+
+# приватные ключи и сертификаты
+server_private_key
+store_key
+*.key
+*.pem
+*.crt
+.ssh/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Kubernetes / Helm
+kubeconfig
+*.kubeconfig
+.kube/
+*.tgz
+
+# Секреты и локальные env
+.env
+.env.*
+!.env.example
+secrets/
+*.secret
+
+# Python / Node / Java build
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+target/
+build/
+dist/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
