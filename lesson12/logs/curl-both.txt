@@ -1,0 +1,23 @@
+### dev 192.168.56.10
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Mon, 26 Oct 2026 06:36:25 GMT
+Content-Type: text/html
+Content-Length: 615
+Last-Modified: Mon, 26 Oct 2026 06:35:23 GMT
+Connection: keep-alive
+ETag: "6adef4ab-267"
+Accept-Ranges: bytes
+
+
+### prod 192.168.56.11
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Mon, 26 Oct 2026 06:36:25 GMT
+Content-Type: text/html
+Content-Length: 615
+Last-Modified: Mon, 26 Oct 2026 06:36:10 GMT
+Connection: keep-alive
+ETag: "6adef4da-267"
+Accept-Ranges: bytes
+

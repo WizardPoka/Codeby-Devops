@@ -1,0 +1,10 @@
+# Окружение prod
+# Ansible подключается к ВМ по SSH-ключу (стандартный Vagrant insecure key).
+[prod]
+prod-vm ansible_host=192.168.56.11
+
+[prod:vars]
+ansible_user=vagrant
+ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key
+ansible_python_interpreter=/usr/bin/python3
+env_name=prod

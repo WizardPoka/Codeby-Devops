@@ -1,0 +1,7 @@
+# Локальные артефакты Vagrant и Ansible не коммитим.
+.vagrant/
+*.log
+*.retry
+*.key
+*.pem
+.ssh/
