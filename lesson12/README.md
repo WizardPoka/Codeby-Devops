@@ -118,27 +118,28 @@ vagrant ssh prod -c "systemctl is-active nginx && dpkg -l wget htop nginx | tail
 
 ## Что приложить к отчёту
 
-Скриншоты (положить в `screenshots/`):
+Скриншоты (лежат в `screenshots/`):
 
-- [ ] `01-vagrant-status.png` — `vagrant status`, обе ВМ `running`
-- [ ] `02-ansible-version.png` — `ansible --version`
-- [ ] `03-ping-dev.png` — `ansible all -m ping` для dev
-- [ ] `04-playbook-dev.png` — вывод playbook с `This host is in dev environment`
-- [ ] `05-playbook-prod.png` — вывод playbook с `This host is in prod environment`
-- [ ] `06-nginx-dev.png` — браузер: `http://192.168.56.10`
-- [ ] `07-nginx-prod.png` — браузер: `http://192.168.56.11`
+- [x] `status_vagrant_ansible.png` — `vagrant status`, `ansible --version`, `ansible all -m ping`
+- [x] `playbook_dev_prod.png` — playbook для dev и prod, строки `This host is in ... environment`
+- [x] `nginx-dev.png` — браузер: `http://192.168.56.10`
+- [x] `nginx-prod.png` — браузер: `http://192.168.56.11`
+
+Обе ВМ отдают стандартную страницу `Welcome to nginx!` — это ожидаемо, задание
+не требует разного контента. Различие окружений видно по IP-адресу в браузере
+и по выводу playbook.
 
 Текстовые логи (уже в `logs/`):
 
-- [ ] `ansible-version.txt`
-- [ ] `vagrant-status.txt`
-- [ ] `inventory-dev.txt`, `inventory-prod.txt`
-- [ ] `syntax-check.txt`
-- [ ] `ping-dev.txt`, `ping-prod.txt`
-- [ ] `playbook-dev.txt`, `playbook-prod.txt`
-- [ ] `idempotency-dev.txt`, `idempotency-prod.txt`
-- [ ] `vm-check-dev.txt`, `vm-check-prod.txt`
-- [ ] `curl-both.txt`
+- [x] `ansible-version.txt`
+- [x] `vagrant-status.txt`
+- [x] `inventory-dev.txt`, `inventory-prod.txt`
+- [x] `syntax-check.txt`
+- [x] `ping-dev.txt`, `ping-prod.txt`
+- [x] `playbook-dev.txt`, `playbook-prod.txt`
+- [x] `idempotency-dev.txt`, `idempotency-prod.txt`
+- [x] `vm-check-dev.txt`, `vm-check-prod.txt`
+- [x] `curl-both.txt`
 
 ## Статус
 
@@ -148,8 +149,8 @@ vagrant ssh prod -c "systemctl is-active nginx && dpkg -l wget htop nginx | tail
 - [x] playbook: пакеты, nginx, debug окружения
 - [x] SSH-подключение по ключу
 - [x] Логи выполнения
+- [x] Скриншоты
 - [x] Commit / push ветки `lesson12`
-- [ ] Скриншоты
 - [ ] PR `lesson12 -> main`
 
 ## Остановка и удаление
